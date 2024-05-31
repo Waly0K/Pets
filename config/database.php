@@ -1,9 +1,9 @@
 <?php
     //Database configuration
     $host     = 'localhost'; //=>127.0.0.1
-    $dbname   = 'Pets';
+    $dbname   = 'pets';
     $username = 'postgres';
-    $password = 'unicesmag';
+    $password = 'pgadmin4';
     $port     = '5432';
 
     $conn = pg_connect("
@@ -17,6 +17,6 @@
     if(!$conn)  {
         die("connection error" . pg_last_error());
     } else  {
-        echo "success !!!!";
+        
     }
 ?>         
