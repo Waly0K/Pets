@@ -34,8 +34,11 @@ require '../config/database.php';
                 echo "<td>".$row['email']."</td>";
                 echo "<td>".$row['status']."</td>";
                 echo "<td><img src='Photos/usuario.png' width='32'></td>";
-                echo "<td> <a href='#'><img src='iconos/editar.png' width='32'></a> <a href='#'><img src='iconos/borrar.png' width='32'></a> </td>";
-                echo "</tr>";
+                echo "<td>
+                <a href='#'><img src='iconos/Editar.png' width='20'></a>
+                <a href='delete_user.php?id=' onclick='return confirm(\"Are you sure you want to delete this user?\")'><img src='iconos/borrar.png' width='20'></a>
+            </td>";
+        echo "</tr>";
             }
         ?>
     </table>
